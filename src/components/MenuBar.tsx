@@ -8,85 +8,85 @@ const menuItems = [
     title: "MENU",
     items: [
       {
-        icon: "/public/home.png",
+        icon: "./home.png",
         label: "Home",
         href: "/",
         visible: ["admin", "teacher", "student", "parent"]
       },
       {
-        icon: "/public/teacher.png",
+        icon: "./teacher.png",
         label: "Teachers",
         href: "/list/teachers",
         visible: ["admin", "teacher"]
       },
       {
-        icon: "/public//student.png",
+        icon: ".//student.png",
         label: "Students",
         href: "/list/students",
         visible: ["admin", "teacher"]
       },
       {
-        icon: "/public/parent.png",
+        icon: "./parent.png",
         label: "Parents",
         href: "/list/parents",
         visible: ["admin", "teacher"]
       },
       {
-        icon: "/public/subject.png",
+        icon: "./subject.png",
         label: "Subjects",
         href: "/list/subjects",
         visible: ["admin"]
       },
       {
-        icon: "/public/class.png",
+        icon: "./class.png",
         label: "Classes",
         href: "/list/classes",
         visible: ["admin", "teacher"]
       },
       {
-        icon: "/public/lesson.png",
+        icon: "./lesson.png",
         label: "Lessons",
         href: "/list/lessons",
         visible: ["admin", "teacher"]
       },
       {
-        icon: "/public/exam.png",
+        icon: "./exam.png",
         label: "Exams",
         href: "/list/exams",
         visible: ["admin", "teacher", "student", "parent"]
       },
       {
-        icon: "/public/assignment.png",
+        icon: "./assignment.png",
         label: "Assignments",
         href: "/list/assignments",
         visible: ["admin", "teacher", "student", "parent"]
       },
       {
-        icon: "/public/result.png",
+        icon: "./result.png",
         label: "Results",
         href: "/list/results",
         visible: ["admin", "teacher", "student", "parent"]
       },
       {
-        icon: "/public/attendance.png",
+        icon: "./attendance.png",
         label: "Attendance",
         href: "/list/attendance",
         visible: ["admin", "teacher", "student", "parent"]
       },
       {
-        icon: "/public/calendar.png",
+        icon: "./calendar.png",
         label: "Events",
         href: "/list/events",
         visible: ["admin", "teacher", "student", "parent"]
       },
       {
-        icon: "/public/message.png",
+        icon: "./message.png",
         label: "Messages",
         href: "/list/messages",
         visible: ["admin", "teacher", "student", "parent"]
       },
       {
-        icon: "/public/announcement.png",
+        icon: "./announcement.png",
         label: "Announcements",
         href: "/list/announcements",
         visible: ["admin", "teacher", "student", "parent"]
@@ -97,19 +97,19 @@ const menuItems = [
     title: "OTHER",
     items: [
       {
-        icon: "/public/profile.png",
+        icon: "./profile.png",
         label: "Profile",
         href: "/profile",
         visible: ["admin", "teacher", "student", "parent"]
       },
       {
-        icon: "/public/setting.png",
+        icon: "./setting.png",
         label: "Settings",
         href: "/settings",
         visible: ["admin", "teacher", "student", "parent"]
       },
       {
-        icon: "/public/logout.png",
+        icon: "./logout.png",
         label: "Logout",
         href: "/logout",
         visible: ["admin", "teacher", "student", "parent"]
