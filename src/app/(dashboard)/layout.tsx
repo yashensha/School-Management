@@ -11,7 +11,7 @@ export default function DashboardLayout({
   return (
     <div className="h-screen flex">
       {/* Left */}
-      <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%]  px-4 py-4 max-h-dvh overflow-auto no-scrollbar">
+      <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%]  px-4 py-4 max-h-dvh overflow-auto scrollable-container">
         <Link
           href="/"
           className="flex items-center lg:items-end justify-center gap-2 lg:justify-start"

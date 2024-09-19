@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Hide scrollbar by default */
+.scrollable-container {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.scrollable-container::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+/* Show scrollbar on hover */
+.scrollable-container:hover {
+  scrollbar-width: thin; /* Firefox */
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* IE10+ */
+}
+
+.scrollable-container:hover::-webkit-scrollbar {
+  display: block;
+  width: 8px; /* Adjust for desired thickness */
+}
+
+/* Style the scrollbar */
+.scrollable-container:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.133);
+  border-radius: 4px;
+  
+}
+
+.scrollable-container:hover::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
