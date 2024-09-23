@@ -1,5 +1,6 @@
 "use client"; // Add this at the very top
 
+import { role } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,7 +21,7 @@ const menuItems = [
         visible: ["admin", "teacher"]
       },
       {
-        icon: ".//student.png",
+        icon: "./student.png",
         label: "Students",
         href: "/list/students",
         visible: ["admin", "teacher"]
@@ -126,16 +127,23 @@ const MenuBar = () => {
           <span className="hidden lg:block text-gray-400 font-light my-4">
             {i.title}
           </span>
-          {i.items.map((item) => (
-            <Link
-              href={item.href}
-              key={item.label}
-              className="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2 "
-            >
-              <Image src={item.icon} width={20} height={20} alt={item.label} />
-              <span className="hidden lg:block">{item.label}</span>
-            </Link>
-          ))}
+          {i.items.map((item) =>
+            item.visible.includes(role) ? (
+              <Link
+                href={item.href}
+                key={item.label}
+                className="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2 md:px-2 rounded-md hover:bg-lamaSkyLight"
+              >
+                <Image
+                  src={item.icon}
+                  width={20}
+                  height={20}
+                  alt={item.label}
+                />
+                <span className="hidden lg:block">{item.label}</span>
+              </Link>
+            ) : null
+          )}
         </div>
       ))}
     </div>

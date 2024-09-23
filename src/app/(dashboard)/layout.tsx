@@ -11,7 +11,7 @@ export default function DashboardLayout({
   return (
     <div className="h-screen flex">
       {/* Left */}
-      <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%]  px-4 py-4 max-h-dvh overflow-auto scrollable-container">
+      <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%]  px-2 py-4 max-h-dvh overflow-auto scrollable-container">
         <Link
           href="/"
           className="flex items-center lg:items-end justify-center gap-2 lg:justify-start"
@@ -22,7 +22,7 @@ export default function DashboardLayout({
         <MenuBar />
       </div>
       {/* Right */}
-      <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#f7f8fa] overflow-y-auto">
+      <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#f7f8fa] overflow-y-auto flex flex-col">
         <NavBar />
         {children}
       </div>
